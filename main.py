@@ -5,9 +5,6 @@ from skimage.filters import threshold_otsu
 from skimage.measure import label, regionprops
 from skimage.morphology import skeletonize
 
-def circularity(region):
-    return (region.area * np.pi * 4) / (region.perimeter ** 2)
-
 def proportion(width, height):
     return max(width, height) / min(width, height)
 
